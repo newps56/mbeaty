@@ -1,0 +1,299 @@
+<!YPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Beaty - Resume</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 2px solid #003366;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 20px;
+        }
+        .header-left h1 {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            font-size: 3em;
+            color: #003366;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .header-left p {
+            margin: 10px 0 0;
+            font-size: 1.1em;
+            color: #555555;
+        }
+        .header-left p i {
+            color: #003366;
+            margin-right: 8px;
+        }
+        .download-button {
+            padding: 12px 25px;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 0;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            border: 2px solid #003366;
+        }
+        .download-button:hover {
+            background: white;
+            color: #003366;
+            border: 2px solid #003366;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .download-button {
+                margin-top: 15px;
+            }
+        }
+        .section {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section h2 {
+            font-family: 'Oswald', sans-serif;
+            color: #003366;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #003366;
+            margin-top: 5px;
+        }
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            color: #003366;
+            font-size: 1.6em;
+            margin-bottom: 8px;
+        }
+        .job-info {
+            font-size: 1em;
+            color: #757575;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+        ul li::before {
+            content: "\f0c8"; /* Font Awesome square icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #003366;
+            font-size: 1.1em;
+        }
+        aside {
+            background-color: #E6E6E6;
+            padding: 20px;
+            border-radius: 0;
+            border-right: 3px solid #003366;
+        }
+        aside .section h2 {
+            font-size: 1.8em;
+        }
+        aside .section ul {
+            font-size: 0.95em;
+        }
+        .key-skills li strong {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1>Marc Beaty</h1>
+                <p><i class="fas fa-map-marker-alt"></i> Huntington Beach, CA | <i class="fas fa-envelope"></i> marc.beaty@gmail.com | <i class="fas fa-phone"></i> +1 (714) 318-0557 | <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/marc-beaty/" target="_blank">LinkedIn</a></p>
+            </div>
+            <!-- Add this in your HTML where you want the download button -->
+            <button onclick="generatePDF()" style="
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            ">Download PDF</button>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column: Skills and Technical Expertise -->
+            <aside>
+                <div class="section key-skills">
+                    <h2>Key Skills</h2>
+                    <ul>
+                        <li><strong>Video Production Leadership:</strong> End-to-end content creation (filming, directing, editing, delivery)</li>
+                        <li><strong>Live Streaming Expertise:</strong> vMix mastery, Teradek encoders, LiveU, broadcast production, remote workflows</li>
+                        <li><strong>Technical Proficiency:</strong> RED, Panasonic, Canon, Sony cameras; lighting, audio post-processing, video compression</li>
+                        <li><strong>Content Strategy:</strong> Multi-platform optimization (YouTube, social), branded campaigns, audience growth</li>
+                        <li><strong>Innovation:</strong> Product ideation (Surfline Sessions), technical problem-solving</li>
+                        <li><strong>Team Management:</strong> Leading videographers, editors, and global contributors</li>
+                        <li><strong>Digital Tools:</strong> Motion graphics, digital asset management, social/video platform integration, basic scripting and HTML</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Technical Expertise</h2>
+                    <ul>
+                        <li><strong>Software:</strong> vMix, Adobe Premiere, After Effects, Davinci Resolve </li>
+                        <li><strong>Hardware:</strong> RED, Panasonic, Canon, Sony cameras; Teradek encoders, LiveU, live switching hardware, lighting rigs, audio equipment, podcasting equipment</li>
+                        <li><strong>Formats:</strong> Video codecs, compression, 4K production, streaming protocols (NDI, SRT, RTSP, RTMP)</li>
+                        <li><strong>Platforms:</strong> PC, Mac, Linux, YouTube, Facebook, Instagram, Vimeo </li>
+                      
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Right Column: Summary, Experience, Achievements -->
+            <section>
+                <div class="section">
+                    <h2>Professional Summary</h2>
+                    <p>Dynamic Video Production Expert with over 22 years of experience creating and distributing impactful video content. Pioneered Surfline.com into the premier surfing video channel, driving millions of views via live streaming, branded campaigns, and a top YouTube presence. Conceived Surfline Sessions in 2016, revolutionizing surfer ride capture. Master of the full production lifecycle, with technical expertise in vMix, RED/Sony/Canon/Panasonic cameras, Teradek/LiveU systems, and video workflows. Proven leader, collaborating with brands like Red Bull, Nike, and GoPro to deliver world-class marketing content.</p>
+                </div>
+                <div class="section">
+                    <h2>Professional Experience</h2>
+                    <div class="job">
+                        <h3>Senior Video Producer</h3>
+                        <p class="job-info">Surfline Wavetrak, Inc. – Huntington Beach, CA | Jan 2006 – Present (19+ years)</p>
+                        <ul>
+                            <li>Scaled Surfline.com into the leading surfing video channel with millions of views through original programming and live streams.</li>
+                            <li>Conceived Surfline Sessions in 2016, syncing GPS data with Cam Rewinds for automated clips; pitched to leadership for its 2019 launch.</li>
+                            <li>Grew Surfline's YouTube channel into a global hub (over 300K subscribers) with weekly content and live broadcasts.</li>
+                            <li>Directed <em>Pipeline and Kelly Slater</em> for <em>Wave of the Winter</em>, hitting over 2.1 million views on Oakley's channel with cinematic production.</li>
+                            <li>Produced and directed <em>Six Weeks on the North Shore</em>, nearing 1 million views, praised as "one of the best surf movies ever."</li>
+                            <li>Led <em>Forerunners</em>, a bi-weekly live YouTube show, using vMix and Teradek encoders for seamless delivery.</li>
+                            <li>Managed <em>Wave of the Winter</em>, an 11-year video contest, producing annual edits viewed by millions.</li>
+                            <li>Created 10 North Shore video documentaries, distributing in-depth surf culture stories.</li>
+                            <li>Oversaw production from concept to distribution, excelling in interviews, branded campaigns, and live events.</li>
+                            <li>Partnered with brands like Red Bull, Nike, Clif Bar, Seadoo,and Oakley to enhance engagement and revenue.</li>
+                            <li>Innovated remote workflows with editing, asset management, and scripting solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>Advertising Sales Manager</h3>
+                        <p class="job-info">Surfline Wavetrak, Inc. – Huntington Beach, CA | Nov 2002 – Jan 2006 (3 years, 3 months)</p>
+                        <ul>
+                            <li>Led media sales and upselling for Surfline.com's online platforms.</li>
+                            <li>Developed interactive campaigns with brands like Globe, Quiksilver, and Oakley.</li>
+                            <li>Exceeded sales goals despite economic challenges.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>Advertising Sales Manager</h3>
+                        <p class="job-info">Surfing Magazine – Huntington Beach, CA | Sep 2001 – Nov 2002 (1 year, 3 months)</p>
+                        <ul>
+                            <li>Managed print ad sales for <em>Surfing Magazine</em>, <em>Bodyboarding Magazine</em>, and <em>Surfing Girl Magazine</em>.</li>
+                            <li>Secured a landmark deal with competitor <em>Surfer Magazine</em> under the same parent company.</li>
+                            <li>Met targets during an economic downturn with tailored client solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h3>Customer Service Manager</h3>
+                        <p class="job-info">SWELL – Huntington Beach, CA | Jun 2000 – Sep 2001 (1 year, 4 months)</p>
+                        <ul>
+                            <li>Troubleshot technical issues for Surfline.com's live streaming services.</li>
+                            <li>Managed a call center team for Swell.com and Monsterskate.com, boosting sales through upselling.</li>
+                            <li>Promoted to manager within 3 months for strong problem-solving and leadership.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Notable Achievements</h2>
+                    <ul>
+                        <li>Conceived Surfline Sessions in 2016, pioneering GPS-synced video clips for surfers.</li>
+                        <li>Directed <em>Pipeline and Kelly Slater</em>, achieving over 2.1 million views on Oakley's channel.</li>
+                        <li>Produced <em>Six Weeks on the North Shore</em>, nearing 1 million views with top reviews.</li>
+                        <li>Grew Surfline's YouTube channel into a global leader.</li>
+                        <li>Delivered campaigns for Monster Energy, Garmin, and Clif Bar, enhancing brand presence.</li>
+                        <li>Produced 11 <em>Wave of the Winter</em> contests and North Shore documentaries.</li>
+                        <li>Optimized worldwide streaming with Teradek solutions.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Add this script tag near the end of your body tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+    function generatePDF() {
+        const element = document.body;
+        
+        const options = {
+            margin: [0.5, 0.5, 0.5, 0.5], // [top, right, bottom, left] in inches
+            filename: 'Marc Beaty Resume.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { 
+                scale: 2,
+                useCORS: true,
+                letterRendering: true
+            },
+            jsPDF: { 
+                unit: 'in', 
+                format: 'letter', 
+                orientation: 'portrait'
+            }
+        };
+
+        html2pdf().set(options).from(element).save();
+    }
+    </script>
+</body>
+</html>
