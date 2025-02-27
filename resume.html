@@ -153,7 +153,34 @@
             font-weight: 700;
         }
         section {
-            padding-right: 25px; /* Increased right-side padding */
+            padding-right: 25px;
+        }
+        /* Style for embedded videos and links */
+        .video-section iframe {
+            width: 100%;
+            max-width: 300px;
+            height: 169px;
+            margin-bottom: 10px;
+        }
+        .video-section a {
+            display: block;
+            color: #003366;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .video-section a:hover {
+            text-decoration: underline;
+        }
+        .video-section p {
+            font-size: 0.8em;
+            color: #555555;
+            margin: 0 0 10px 0;
+        }
+        .video-section .link-with-emoji {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Space between emoji and text */
         }
         @media print {
             body {
@@ -184,7 +211,10 @@
                 display: none;
             }
             section {
-                padding-right: 0.75in; /* Matches increased padding for PDF */
+                padding-right: 0.75in;
+            }
+            .video-section {
+                display: none; /* Removes entire Featured Work section in PDF */
             }
         }
     </style>
@@ -202,7 +232,7 @@
 
         <!-- Main Content -->
         <div class="main-content">
-            <!-- Left Column: Skills and Technical Expertise -->
+            <!-- Left Column: Skills, Technical Expertise, and Featured Work -->
             <aside>
                 <div class="section key-skills">
                     <h2>Key Skills</h2>
@@ -225,6 +255,27 @@
                         <li><strong>OS Proficiency:</strong> Highly familiar with Windows, Mac, and Linux systems, utilizing terminal commands and tools like FFmpeg for video processing and workflow optimization.</li>
                         <li><strong>Networking:</strong> Skilled in setting up video-over-IP networks, including NDI configurations for low-latency streaming and SRT port setups for secure transmission; proficient in IP addressing, QoS management, and network troubleshooting.</li>
                     </ul>
+                </div>
+                <div class="section video-section">
+                    <h2>Featured Work</h2>
+                    <!-- Embedded Video 1: Forerunners -->
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/3569buYOthg" frameborder="0" allowfullscreen title="Forerunners Live Forecasting Show (Remote, vMix)"></iframe>
+                    <p>Directed a seamless remote live show using vMix, showcasing expert streaming proficiency.</p>
+                    <!-- Embedded Video 2: Wave of the Winter -->
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/BSo5uLvK3Jk" frameborder="0" allowfullscreen title="Wave of the Winter Movie Trailer"></iframe>
+                    <p>Crafted a stunning trailer with cinematic editing, highlighting top-tier production skills.</p>
+                    <!-- Linked Video 1: Seadoo -->
+                    <div class="link-with-emoji">
+                        <span>▶️</span>
+                        <a href="https://www.youtube.com/watch?v=giJIaAAQ1so&t=26s" target="_blank">Seadoo Branded Content</a>
+                    </div>
+                    <p>Produced a dynamic branded campaign for Seadoo, blending creativity and precision.</p>
+                    <!-- Linked Video 2: T.Patterson -->
+                    <div class="link-with-emoji">
+                        <span>▶️</span>
+                        <a href="https://www.youtube.com/watch?v=BE7ebbNTAAs" target="_blank">T.Patterson Shaper Tour Editorial</a>
+                    </div>
+                    <p>Shot and edited a compelling editorial on iPhone, demonstrating innovative adaptability.</p>
                 </div>
             </aside>
 
