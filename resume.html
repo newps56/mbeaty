@@ -14,14 +14,14 @@
             font-family: 'Roboto', sans-serif;
             color: #333333;
             margin: 0;
-            padding: 10px; /* Reduced padding */
-            line-height: 1.3; /* Tighter line spacing */
+            padding: 10px;
+            line-height: 1.3;
         }
         .container {
             max-width: 1100px;
             margin: auto;
             background: white;
-            padding: 15px; /* Reduced padding */
+            padding: 15px;
             border-radius: 0;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             border: 2px solid #003366;
@@ -30,21 +30,21 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px; /* Reduced margin */
+            margin-bottom: 20px;
             border-bottom: 3px solid #003366;
-            padding-bottom: 10px; /* Reduced padding */
+            padding-bottom: 10px;
         }
         .header-left h1 {
             margin: 0;
             font-family: 'Oswald', sans-serif;
-            font-size: 2.5em; /* Slightly smaller */
+            font-size: 2.5em;
             color: #003366;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         .header-left p {
-            margin: 5px 0 0; /* Reduced margin */
-            font-size: 1em; /* Slightly smaller */
+            margin: 5px 0 0;
+            font-size: 1em;
             color: #555555;
         }
         .header-left p i {
@@ -52,14 +52,14 @@
             margin-right: 8px;
         }
         .download-button {
-            padding: 10px 20px; /* Slightly smaller button */
+            padding: 10px 20px;
             background: #003366;
             color: white;
             text-decoration: none;
             border-radius: 0;
             font-family: 'Oswald', sans-serif;
             font-weight: 700;
-            font-size: 1em; /* Slightly smaller */
+            font-size: 1em;
             transition: all 0.3s ease;
             border: 2px solid #003366;
             cursor: pointer;
@@ -71,8 +71,8 @@
         }
         .main-content {
             display: grid;
-            grid-template-columns: 35% 65%; /* Original column widths */
-            gap: 20px; /* Reduced gap */
+            grid-template-columns: 33% 67%;
+            gap: 20px;
         }
         @media (max-width: 768px) {
             .main-content {
@@ -87,13 +87,13 @@
             }
         }
         .section {
-            margin-bottom: 15px; /* Reduced margin */
+            margin-bottom: 15px;
             position: relative;
         }
         .section h2 {
             font-family: 'Oswald', sans-serif;
             color: #003366;
-            font-size: 1.6em; /* Reduced from 2em */
+            font-size: 1.6em;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -101,19 +101,19 @@
         .section h2::after {
             content: '';
             display: block;
-            width: 50px; /* Slightly smaller */
+            width: 50px;
             height: 3px;
             background: #003366;
-            margin-top: 3px; /* Reduced margin */
+            margin-top: 3px;
         }
         h3 {
             font-family: 'Oswald', sans-serif;
             color: #003366;
-            font-size: 1.3em; /* Reduced from 1.6em */
+            font-size: 1.3em;
             margin-bottom: 6px;
         }
         .job-info {
-            font-size: 0.9em; /* Reduced size */
+            font-size: 0.9em;
             color: #757575;
             margin-bottom: 10px;
             font-style: italic;
@@ -124,9 +124,9 @@
         }
         ul li {
             position: relative;
-            padding-left: 20px; /* Slightly smaller padding */
-            margin-bottom: 8px; /* Reduced margin */
-            font-size: 0.85em; /* Smaller text */
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 0.85em;
         }
         ul li::before {
             content: "\f0c8"; /* Font Awesome square icon */
@@ -135,16 +135,16 @@
             position: absolute;
             left: 0;
             color: #003366;
-            font-size: 1em; /* Slightly smaller */
+            font-size: 1em;
         }
         aside {
             background-color: #E6E6E6;
-            padding: 15px; /* Reduced padding */
+            padding: 15px;
             border-radius: 0;
             border-right: 3px solid #003366;
         }
         aside .section h2 {
-            font-size: 1.6em; /* Reduced from 1.8em */
+            font-size: 1.6em;
         }
         aside .section ul {
             font-size: 0.9em;
@@ -152,7 +152,9 @@
         .key-skills li strong {
             font-weight: 700;
         }
-        /* Print-specific CSS to control page breaks */
+        section {
+            padding-right: 25px; /* Increased right-side padding */
+        }
         @media print {
             body {
                 padding: 0;
@@ -176,10 +178,13 @@
                 page-break-inside: avoid;
             }
             .main-content {
-                grid-template-columns: 35% 65%;
+                grid-template-columns: 33% 67%;
             }
             button {
                 display: none;
+            }
+            section {
+                padding-right: 0.75in; /* Matches increased padding for PDF */
             }
         }
     </style>
@@ -214,11 +219,11 @@
                 <div class="section">
                     <h2>Technical Expertise</h2>
                     <ul>
-                        <li><strong>Software:</strong> vMix, Adobe Premiere, After Effects, Final Cut Pro, scripting and HTML</li>
-                        <li><strong>Hardware:</strong> RED, Panasonic, Canon, Sony cameras; Teradek encoders, LiveU systems, live switching hardware, lighting rigs, audio equipment</li>
-                        <li><strong>Formats:</strong> Video codecs, compression, 4K production, streaming protocols (NDI, SRT, RTSP, RTMP)</li>
-                        <li><strong>Platforms:</strong> PC, Mac, Linux experience</li>
-                        <li><strong>Networking:</strong> Some computer networking</li>
+                        <li><strong>Software:</strong> Proficient in vMix (with JavaScript scripting for automation), Adobe Premiere Pro, After Effects, Final Cut Pro, DaVinci Resolve, and OBS Studio for video production, editing, and live streaming workflows.</li>
+                        <li><strong>Hardware:</strong> Experienced with RED, Panasonic, and Canon cameras, including Canon and Panasonic PTZ systems with remote operation; adept at configuring Teradek encoders, LiveU systems, Blackmagic ATEM live switchers, professional lighting rigs, and audio equipment (e.g., mixers, wireless mics).</li>
+                        <li><strong>Encoding & Compression:</strong> Expert in optimizing video compression for best results across platforms (e.g., YouTube, Instagram, self-hosted), leveraging ideal encoding settings and streaming protocols like NDI and SRT.</li>
+                        <li><strong>OS Proficiency:</strong> Highly familiar with Windows, Mac, and Linux systems, utilizing terminal commands and tools like FFmpeg for video processing and workflow optimization.</li>
+                        <li><strong>Networking:</strong> Skilled in setting up video-over-IP networks, including NDI configurations for low-latency streaming and SRT port setups for secure transmission; proficient in IP addressing, QoS management, and network troubleshooting.</li>
                     </ul>
                 </div>
             </aside>
@@ -298,7 +303,7 @@
         const element = document.querySelector('.container');
         
         const options = {
-            margin: [0.5, 0.5, 0.5, 0.5], // Consistent half-inch margins
+            margin: [0.5, 0.5, 0.5, 0.5],
             filename: 'Marc_Beaty_Resume.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { 
